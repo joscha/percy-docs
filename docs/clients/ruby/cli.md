@@ -120,6 +120,16 @@ $ percy snapshot _site/ --baseurl "/my-subdir"
 
 For Jekyll users, this should be set to the same as your `baseurl` config setting.
 
+### Non-ASCII characters
+
+In case you get errors due to `invalid byte sequence in US-ASCII` from percy-client, you can set the following environment variables:
+
+```bash
+export LC_ALL=C.UTF-8
+export LANG=en_US.UTF-8
+export LANGUAGE=en_US.UTF-8
+```
+
 ## Changelog
 
 *   [percy-cli releases on GitHub](https://github.com/percy/percy-cli/releases)
